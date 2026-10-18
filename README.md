@@ -20,11 +20,11 @@ sffnet/
 │   ├── ffa.py                     # Frequency-domain feature awareness
 │   ├── sfa.py                     # Spatial-domain (ResNet-50) encoder
 │   ├── sfi.py                     # Spatial-frequency interaction
-│   ├── sffnet.py                  # Main detection architecture
-├── model\_data/
-│   ├── voc\_classes.txt            
-├── train\_sffnet\_ddp.py           
-├── sffnet\_inference.py            
+│   ├── sffnet.py                  # Main detection architecture           
+├── train_sffnet_ddp.py           
+├── sffnet_inference.py
+├── sffnet_pre.py                   # Prediction
+├── evaluate_sffnet.py              # Performance Evaluation          
 ├── requirements.txt
 └── README.md
 ```
