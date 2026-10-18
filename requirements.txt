@@ -1,0 +1,31 @@
+# Intended environment: Python 3.10.16, PyTorch CUDA 11.6 wheel builds.
+# Linux + NVIDIA GPU is recommended for NCCL-based distributed training.
+#
+# IMPORTANT: The supplied package list did not contain exact versions for numpy,
+# opencv-python, or matplotlib. The ranges below are PROVISIONAL, not a complete
+# reproduction lockfile. Replace them with versions from the original environment.
+#
+# Official historical PyTorch wheel index for CUDA 11.6:
+--extra-index-url https://download.pytorch.org/whl/cu116
+
+# GPU-oriented PyTorch stack -- exact versions reported by the author
+torch==1.13.1+cu116
+torchvision==0.14.1+cu116
+torchaudio==0.13.1+cu116
+
+# Imports visible in supplied inference/training code
+numpy>=1.23.5,<2.0                 # Exact installed version was not provided
+opencv-python<4.12                # Exact installed version was not provided
+matplotlib<4                      # Exact installed version was not provided; heatmap utility
+Pillow==12.3.0
+
+# Experiment, visualization, and evaluation packages reported in the environment
+scipy==1.15.2
+pycocotools==2.0.8
+tensorboard==2.19.0
+tqdm==4.65.2
+thop==0.1.1-2209072238
+PyYAML==6.0.3
+
+# Also reported in the author's environment; potentially used by project utilities
+pandas==2.3.3
