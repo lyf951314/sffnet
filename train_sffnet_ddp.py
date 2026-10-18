@@ -19,15 +19,15 @@ from utils.utils import (download_weights, get_classes, seed_everything,
 from utils.utils_fit import fit_one_epoch
 
 if __name__ == "__main__":
-     Cuda = True
-     seed            = 11
-     distributed     = True
-     sync_bn         = True
-     fp16            = True
-     classes_path    = os.environ.get('SFFNET_CLASSES_PATH', 'model_data/voc_classes.txt')
-     model_path      = ''
-     input_shape     = [512, 512]
-     backbone        = "resnet50"
+    Cuda = True
+    seed            = 11
+    distributed     = True
+    sync_bn         = True
+    fp16            = True
+    classes_path    = os.environ.get('SFFNET_CLASSES_PATH', 'model_data/voc_classes.txt')
+    model_path      = ''
+    input_shape     = [512, 512]
+    backbone        = "resnet50"
     pretrained      = True
     Init_Epoch          = 0
     Freeze_Epoch        = 100
